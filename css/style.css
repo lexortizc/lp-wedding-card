@@ -258,8 +258,8 @@ a:focus {
 
 .music-box button {
   background: rgba(0, 0, 0, 0.1);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   line-height: 37px;
   font-size: 18px;
   font-size: 1rem;
@@ -276,6 +276,10 @@ a:focus {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  -webkit-animation: save-the-date-pulse 1s infinite;
+  animation: save-the-date-pulse 1s infinite;
+  animation-delay: 10s;
+  animation-iteration-count: 15;
 }
 
 @media (max-width: 991px) {
@@ -286,7 +290,7 @@ a:focus {
 }
 
 .music-box .toggle-music-box {
-  top: -50px;
+  top: -60px;
   visibility: visible;
   opacity: 1;
 }
@@ -1799,7 +1803,6 @@ a:focus {
 }
 
 .hero .wedding-announcement .couple-name-merried-text .couple-name-merried-amp {
-  font-family: "FontAwesome";
   font-size: 3rem;
 }
 
@@ -2480,7 +2483,7 @@ a:focus {
 .count-down-section h2 {
   font-family: "Great Vibes", cursive;
   font-size: 72px;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #fff;
   margin: 0;
   position: relative;
@@ -2695,6 +2698,10 @@ a:focus {
   .story-section .story-timeline > .row > .col:last-child {
     padding: 0 15px;
   }
+}
+
+.story-section .story-timeline .story-text {
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -2971,7 +2978,7 @@ a:focus {
 .events-section .event ul li {
   font-size: 16px;
   font-size: 0.88889rem;
-  color: #a9a9a9;
+  color: #4b7a71;
   position: relative;
   padding-left: 22px;
 }
@@ -2984,7 +2991,7 @@ a:focus {
 }
 
 .events-section .event ul li i {
-  color: #5e9a8e;
+  color: #4b7a71;
   position: absolute;
   left: 0;
   top: 3px;
@@ -3255,6 +3262,8 @@ a:focus {
 .gallery-section .gallery-filters {
   text-align: left;
   margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -3310,9 +3319,10 @@ a:focus {
 }
 
 .gallery-section .masonry-gallery .grid {
-  width: 33.33%;
+  width: 100%;
   float: left;
   padding: 0 7.5px 15px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
